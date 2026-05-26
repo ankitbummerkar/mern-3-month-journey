@@ -1,0 +1,242 @@
+:root {
+    --text-color: #1a1c20;
+    --backgound-color:#eeeff1;
+    --link-color:#4a7bee;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--backgound-color);
+    font-family:  'Poppins', sans-serif;
+}
+
+nav {
+display: flex;
+justify-content: space-between;
+height: 50px;
+padding: 0 50px;
+align-items: center;
+animation: from-top-to-bottom 0.5s;
+
+}
+.shadow{
+
+    height: 1px;
+    background-color: transparent;
+box-shadow: 0 2px 1px rgba(0, 0, 0, 0.3);
+
+}
+nav .logo a{
+    color:var(--text-color);
+    font-weight:600;
+    font-size: 22px;
+}
+nav .menu a{
+    color:var(--text-color);
+    font-weight:600;
+    font-size: 20px;
+    margin: 0 10px;
+}
+nav .menu a:last-child{
+color:#eeeff1;
+background-color: #1a1c20;
+padding: 5px 15px;
+border-radius: 10px;
+}
+a{
+    text-decoration: none;
+    font-size: 20px;
+}
+/* hero section */
+.hero {
+    display: flex;
+    margin-top: 50px;
+    padding: 0 50px;
+align-items: center;
+
+}
+
+.hero img{
+    width: 500px;
+    height: 500px;
+}
+.hero h2 {
+    margin-bottom: 10px;
+}
+.herolist {
+    margin-top: 20px;
+    
+}
+.herolist a{
+    display: inline-block;
+    border: 2px solid var(--link-color);
+    padding: 2px 15px;
+    margin: 0px 10px;
+}
+
+/* skills*/
+/* skills */
+.skillsection{
+   text-align: center;
+   margin-top: 80px;
+}
+
+.skillslist img{
+    width: 50px;
+    height: 50px;
+}
+
+.skillslist span{
+    display: inline-flex;
+   
+    align-items: center;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+/* testimonial */
+.testimonial h2{
+       text-align: center;
+   margin-top: 80px;
+}
+.testimonialcontainer{
+    display: flex;
+    align-items: center;
+    padding: 50px;
+}
+.testimonialcontainer p{
+    text-align: center;
+}
+
+.testimonialcontainer p{
+    margin: 0px 30px;
+}
+.testimonial img{
+ height: 300px;
+ width: 300px;
+ border-radius: 50%;
+}
+/* contact */
+
+.contact{
+    text-align: center;
+    margin-top: 80px;
+    padding: 20px;
+}
+
+.contact h2{
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.contact-form{
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+}
+
+.contact-form label{
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    font-family: inherit;
+}
+
+.contact-form button{
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    background: #1a1c20;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.contact-form button:hover{
+    background: #4a7bee;
+}
+
+/*footer */
+
+footer{
+
+    text-align: center;
+    background-color: #1a1c20;
+    color: #eeeff1;
+}
+
+/* animations */
+
+@keyframes from-top-to-bottom {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+
+    }
+    100% {
+ opacity: 1;
+        transform: translateY(0px);
+
+    }
+    
+}
+
+
+
+
+@media (max-width: 1200px) {
+
+    .hero{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero img{
+        width: 300px;
+        height: 300px;
+    }
+
+    .menu span{
+        display: none;
+    }
+}
+@media (max-width:620px){
+
+   .herolist a{
+    margin-bottom: 20px;
+}
+    
+}
+
+@media (max-width:730px){
+
+   .testimonialcontainer{
+   flex-direction: column;
+   }
+   .testimonialcontainer .founder{
+margin-bottom: 20px;
+}
+}
+    
+
