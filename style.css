@@ -82,6 +82,10 @@ align-items: center;
     padding: 2px 15px;
     margin: 0px 10px;
 }
+.herolist a:hover{
+   
+    border: 2px solid var(--text-color);
+color: var(--text-color);}
 
 /* skills*/
 /* skills */
